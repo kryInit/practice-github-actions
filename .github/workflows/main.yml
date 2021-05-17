@@ -6,7 +6,7 @@ jobs:
   kr:
     name: kr
     runs-on: ubuntu-20.04
-    if: "contains(github.event.head_commit.message, '[run ci]'"
+    if: "contains(github.event.head_commit.message, 'run ci'"
     steps:
       - uses: actions/checkout@v2
       - name: hi
